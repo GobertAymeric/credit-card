@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>Credit Card</title>
+</head>
+<body>
+    <div class="Container">
+        <h1>Paiement par carte de crédit</h1>
+        <h3>Frais de transaction <span class="frais">0.00€</span></h3>
+        <div class="container_card">
+            <div class="carte">
+                <div id="contenu1">
+
+                </div>
+                <div id="contenu2">
+                    
+                </div>
+                <div id="contenu3">
+                    
+                </div>
+            </div>
+            <form action="#" class="" id="form">
+                <label for="" class="label_center">Numéro de la carte</label>
+                <input type="text" pattern="([0-9]{16})" name="card_number" id="number">
+                
+                <label for="" class="label_center">Titulaire de la carte</label>
+                <input type="text" pattern="([a-zA-Z]{1,})" name="name" id="Prenom">
+                
+                <div class="verif">
+                    <div class="small_containt">
+                        <label for="" class="label_center">Date d'expiration</label>
+                        <input type="text" pattern="([0-9]{2})[/]([0-9]{2})" name="first_name" id="Expiration" placeholder="MM/YY">
+                    </div>
+                    <div class="small_containt">
+                        <label for="" class="label_center">Cryptogramme</label>
+                        <input type="text" pattern="([0-9]{3})" name="cryptogramme" id="crypto" placeholder="CVC">
+                    </div>
+                </div>   
+                
+                <button class="bouton" type="submit" id="button">Payer 35,49€</button>
+            </form>
+        </div>
+        <div class="info_secure">
+            <p><img src="asset/images/icon-locked.png"><span class="info_paiement">Paiement sécurisé par by HiPay SAS, 256-bit SSL</span></p>
+        </div>
+    </div>
+    
+</body>
+</html>

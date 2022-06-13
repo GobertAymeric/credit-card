@@ -1,0 +1,111 @@
+body {
+    background: whitesmoke;
+    color: black;
+    font-weight: bolder;
+}
+  
+h1 {
+    text-align: center;
+    color: rgb(255, 102, 0);
+    
+}
+
+h3 {
+    text-align: center;
+    color: gray;
+}
+
+.carte{
+    width: 50%;
+    background-color: rgba(123, 119, 119, 0.169);
+    border-radius: 10px;
+}
+
+#contenu1{
+    min-height: 50px;
+    width: 90%;
+    margin: auto;
+
+}
+
+#contenu2{
+    min-height: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+#contenu3{
+    min-height: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+#form{
+    margin: 0 40px 0 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center; 
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center; 
+}
+
+.container_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center; 
+    height: 200px;
+
+}
+
+.verif{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center; 
+    width: 100%;
+
+}
+
+.small_input{
+    width: 50%;
+}
+
+.small_containt{
+    width: 100%;
+}
+
+.bouton{
+    background-color: rgb(255, 102, 0);
+    border: none;
+    line-height: 50px;
+    border-radius: 7pt;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+
+.label_center{
+    text-align: center;
+}
+
+.info_secure {
+    margin-right: 10px;
+    height: 20px;
+    font-size: large;
+    color: rgb(104, 104, 104);
+}
+
+.info_secure img{
+    width: 20px;
+}
