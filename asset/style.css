@@ -1,44 +1,92 @@
 body {
-    background: whitesmoke;
+    background: rgba(128, 128, 128, 0.174);
     color: black;
-    font-weight: bolder;
 }
   
-h1 {
+.titre {
     text-align: center;
+    margin-top: 10px;
     color: rgb(255, 102, 0);
-    
 }
 
-h3 {
-    text-align: center;
-    color: gray;
+        /* GAUCHE */
+
+.container_modif{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 1100px;
+    margin: auto;
+    margin-top: 5%;
 }
 
-.carte{
+.container_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+}
+
+.card_inner{
     width: 50%;
-    background-color: rgba(123, 119, 119, 0.169);
-    border-radius: 10px;
+    background-color: lightgrey;
+    border-radius: 10pt;
+    height: 300px;
+    position:relative;
 }
 
-#contenu1{
-    min-height: 50px;
+#contenu_1{
     width: 90%;
     margin: auto;
-
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.447);
 }
 
-#contenu2{
-    min-height: 50px;
-    width: 90%;
+#contenu_2{
+    width: 100%;
     margin: auto;
+    color: rgba(255, 255, 255, 0.447);
+    font-size: 22px;
+    margin-left: 30px;
 }
 
-#contenu3{
-    min-height: 50px;
-    width: 90%;
+#contenu_3{
+    width: 100%;
     margin: auto;
+    color: rgba(255, 255, 255, 0.447);
+    font-size: 15px;
+    margin-left: 250px;
 }
+
+.contenu_back_1{
+    min-height: 60px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(71, 71, 71);
+    margin-top: 30px;
+}
+
+.contenu_back_2{
+    min-height: 50px;
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+.contenu_back_3{
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.447);
+}
+
+        /* DROITE */
 
 #form{
     margin: 0 40px 0 40px;
@@ -47,23 +95,6 @@ h3 {
     justify-content: center;
     flex-direction: column;
     align-content: center; 
-
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center; 
-}
-
-.container_card{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center; 
-    height: 200px;
-
 }
 
 .verif{
@@ -72,40 +103,147 @@ h3 {
     flex-direction: row;
     align-content: center; 
     width: 100%;
-
-}
-
-.small_input{
-    width: 50%;
-}
-
-.small_containt{
-    width: 100%;
-}
-
-.bouton{
-    background-color: rgb(255, 102, 0);
-    border: none;
-    line-height: 50px;
-    border-radius: 7pt;
-    color: white;
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 20px;
-    
 }
 
 .label_center{
     text-align: center;
 }
 
-.info_secure {
-    margin-right: 10px;
-    height: 20px;
-    font-size: large;
-    color: rgb(104, 104, 104);
+.small_containt_1{
+    width: 100%;
+    margin: 0px 0px;
 }
 
-.info_secure img{
-    width: 20px;
+#small_containt_2{
+    width: 100%;
+    margin: 0px 0px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.bouton{
+    background-color: rgb(255, 102, 0);
+    border: none;
+    line-height: 56px;
+    border-radius: 7pt;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+label{
+    font-weight: bold;
+    color: #616161;
+    margin-bottom: 6px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+#contenu_4{
+
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    width: 20%;
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+.inter_containt{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.grey {
+    color: darkgrey;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0 32px 0;
+}
+
+.green {
+    color: green;
+}
+
+#puce_1{
+    height: 60px;
+    width: 90px;
+    background-color: #adadad;
+    border-radius: 8pt;
+    padding: 10px 0px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#puce_2{
+    height: 40px;
+    width: 65px;
+    background-color: lightgrey;
+    border-radius: 0 8pt 8pt 0;
+}
+
+#puce_back_1{
+    height: 60px;
+    width: 90px;
+    background-color: #adadad;
+    border-radius: 8pt;
+    padding: 10px 0px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#puce_back_2{
+    height: 40px;
+    width: 65px;
+    background-color: lightgrey;
+    border-radius: 0 8pt 8pt 0;
+}
+
+.info{
+    height: 55px;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 12px;
+
+}
+
+.paiement{
+    margin-top: -30px;
+    margin-left: 30px;
+    font-weight: 500;
+    color: #979797;
+    font-size: 15px;
+  }
+
+  .contenu_back_2 #cryptogramme {
+    font-size: 40px;
+    margin-left: 430px;
+    margin-top: 10px;
+  }
+
+        /* FRONT / BACK  */
+
+.card-front, .card-back {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    border-radius: 10pt;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+  .card-back {
+    transform: rotateY(180deg);
+
 }
