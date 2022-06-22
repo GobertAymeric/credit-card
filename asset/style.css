@@ -26,6 +26,7 @@ body {
     justify-content: center;
     flex-direction: row;
     align-content: center;
+    perspective: 1000px;
 }
 
 .card_inner{
@@ -34,6 +35,12 @@ body {
     border-radius: 10pt;
     height: 300px;
     position:relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card_inner:hover {
+    transform: rotateY(180deg);
 }
 
 #contenu_1{
@@ -86,6 +93,15 @@ body {
     color: rgba(255, 255, 255, 0.447);
 }
 
+.blanc{
+    width: 80%;
+    background-color: white;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
         /* DROITE */
 
 #form{
@@ -105,8 +121,8 @@ body {
     width: 100%;
 }
 
-.label_center{
-    text-align: center;
+.small_input{
+    width: 50%;
 }
 
 .small_containt_1{
@@ -117,8 +133,6 @@ body {
 #small_containt_2{
     width: 100%;
     margin: 0px 0px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
 }
 
 .bouton{
@@ -130,6 +144,10 @@ body {
     font-weight: bold;
     margin-top: 30px;
     font-size: 20px;
+}
+
+.label_center{
+    text-align: center;
 }
 
 label{
@@ -238,12 +256,10 @@ label{
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-
     border-radius: 10pt;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
   .card-back {
     transform: rotateY(180deg);
-
 }
