@@ -43,16 +43,16 @@ body {
     transform: rotateY(180deg);
 }
 
-#contenu_1{
+#contenu1{
     width: 90%;
     margin: auto;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.447);
 }
 
-#contenu_2{
+#contenu2{
     width: 100%;
     margin: auto;
     color: rgba(255, 255, 255, 0.447);
@@ -60,11 +60,11 @@ body {
     margin-left: 30px;
 }
 
-#contenu_3{
+#contenu3{
     width: 100%;
     margin: auto;
     color: rgba(255, 255, 255, 0.447);
-    font-size: 15px;
+    font-size: 22px;
     margin-left: 250px;
 }
 
@@ -162,7 +162,7 @@ label{
     margin-bottom: 20px;
 }
 
-#contenu_4{
+#contenu4{
 
     font-weight: 500;
     color: white;
@@ -243,7 +243,7 @@ label{
   }
 
   .contenu_back_2 #cryptogramme {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 430px;
     margin-top: 10px;
   }
