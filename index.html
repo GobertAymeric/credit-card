@@ -62,20 +62,20 @@
 
             <form action="#" classe="" id="form">
                 <label for="contenu" class="label_center">Numéro de la carte</label>
-                <input class="form-control" type="text" id="num_card" onkeyup="onlyNumber()" maxlength="19">
+                <input class="form-control" type="text" id="num_card" onkeypress="isInputNumber(event)" maxlength="19">
 
                 <label for="contenu" class="label_center">Titulaire de la carte</label>
-                <input class="form-control" type="text" pattern="([a-zA-Z]{1,})" id="name_card">
+                <input class="form-control" type="text" pattern="([a-zA-Z]{1,})" onkeypress="lettersOnly(event)" id="name_card">
 
                 <div class="verif">
                     <div class="small_containt_1">
                         <label for="contenu" class="label_center">Date d'expiration</label>
-                        <input class="form-control small_input" type="text" id="expiration" onkeyup="onlyNumber()" maxlength="5" placeholder="MM/YY">
+                        <input class="form-control small_input" type="text" id="expiration" onkeypress="isInputNumber(event)" maxlength="5" placeholder="MM/YY">
                     </div>
 
                     <div id="small_containt_2">
                         <label for="contenu" class="label_center">Cryptogramme</label>
-                        <input class="form-control small_input" type="text" id="crypto" onkeyup="onlyNumber()" maxlength="3" placeholder="CVC">
+                        <input class="form-control small_input" type="text" id="crypto" onkeypress="isInputNumber(event)" maxlength="3" placeholder="CVC">
                     </div>
                 </div>   
                 <button class="bouton" type="submit" id="button">Payer 35,49€</button>
