@@ -37,14 +37,15 @@ function isInputNumber(evt){
         evt.preventDefault();
     }
 }
-function lettersOnly(evt){         
-    var ch = String.fromCharCode(evt.which);
-        
-    if(!(/[a-z]/.test(ch))){
-        evt.preventDefault();
-    }
 
-}
+// function lettersOnly(evt){         
+//     var ch = String.fromCharCode(evt.which);
+        
+//     if(!(/[a-z]/.test(ch))){
+//         evt.preventDefault();
+//     }
+
+// }
 
 crypto.onfocus = function(){
     flip.style.transform = "rotateY(180deg)";
